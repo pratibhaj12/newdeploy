@@ -3,10 +3,10 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load('home_price_model.pkl')
+model = joblib.load('multi_home_price_model.pkl')
 
 # Title
-st.title('Home Price Prediction App')
+st.title('HomePrices Prediction App')
 
 # Input fields
 area = st.number_input('Enter area (in square feet):', min_value=100.0, step=50.0)
